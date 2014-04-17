@@ -185,5 +185,4 @@ function showmbA_line() {
 
         }
         set_Line4("divmbl_line", line, "", "", 300, 0, 100, times, 4, timeX1, timeX2, timeX3, line2, timeduan, daypre, daynow); //线A
-
     }
