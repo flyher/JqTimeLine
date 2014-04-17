@@ -11,10 +11,20 @@
     height:40px;
     line-height:40px;
     }
-#divmbl_line
+.description
+{
+    width:800px;
+    height:30px;
+    line-height:30px;
+    background-color:Silver;
+    border-radius:4px;    
+    }
+.line
 {
     width:500px;
     height:300px;
+    width:500px;
+    height:300px;
     background-color:skyblue;
-    font-size:10pt;
+    font-size:10pt;       
 }

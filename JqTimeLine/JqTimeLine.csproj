@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\common.css" />
+    <Content Include="css\jqx.base.css" />
     <Content Include="Demo.htm" />
     <Content Include="js\jqtimeline.js" />
     <Content Include="js\jquery-1.10.2.min.js" />
