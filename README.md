@@ -1,7 +1,7 @@
 JqTimeLine
 ==========
 
-A script to draw nearby 24h's data.<br/>
+A script to draw chart control nearby 24h's data.<br/>
 ===<br/><br/>
 更新时间:2014-04-18<br/>
 增加:1.两数据最近24小时时间段内对比折线图（时间点相同）<br/>
