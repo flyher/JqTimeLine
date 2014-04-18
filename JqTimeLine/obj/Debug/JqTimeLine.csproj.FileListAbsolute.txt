@@ -1,4 +1,0 @@
-D:\Project\git\git\JqTimeLine\JqTimeLine\bin\JqTimeLine.dll
-D:\Project\git\git\JqTimeLine\JqTimeLine\bin\JqTimeLine.pdb
-D:\Project\git\git\JqTimeLine\JqTimeLine\obj\Debug\JqTimeLine.dll
-D:\Project\git\git\JqTimeLine\JqTimeLine\obj\Debug\JqTimeLine.pdb
