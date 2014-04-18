@@ -1,7 +1,7 @@
 ﻿#help
 {
-    width:800px;
-    height:150px;
+    width:80%;
+    height:200px;
     line-height:20px;
     background-color:Silver;
     border-radius:10px;
@@ -27,7 +27,7 @@
     }
 .description
 {
-    width:800px;
+    width:80%;
     height:30px;
     line-height:30px;
     background-color:Silver;
@@ -35,7 +35,7 @@
     }
 .line
 {
-    width:500px;
+    width:600px;
     height:300px;
     width:500px;
     height:300px;

@@ -12,8 +12,10 @@
         $(document).ready(function () {
             $("#div_line1").html("努力加载ing");
             $("#div_line2").html("努力加载ing");
-            setTimeout("showline_24_4()", 200);
-            setTimeout("showline_24_2()", 1000);
+            $("#div_line3").html("努力加载ing");
+            setTimeout("showline_24_4_1()", 200);
+            setTimeout("showline_24_2_1()", 1000);
+            setTimeout("showline_24_4_2()", 2000);
         });
     </script>
 </head>
@@ -34,9 +36,12 @@
         <br />
         <div id="div_line1" class="line"></div>
         <br />
-        <div class="description">1.绘制最近24小时的坐标数据，每2小时一次的标记点</div>
+        <div class="description">2.绘制最近24小时的坐标数据，每2小时一次的标记点</div>
         <br />
         <div id="div_line2" class="line"></div>
+        <div class="description">3.绘制最近24小时的两条坐标数据，对比数据，每4小时一次的标记点（A/B时间点相同）</div>
+        <br />
+        <div id="div_line3" class="line"></div>
         <div class="div_foot">
             •Powered by <a href="https://github.com/flyher/JqTimeLine">flyher</a>
         </div>
