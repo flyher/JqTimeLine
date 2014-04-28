@@ -119,9 +119,9 @@ function setLine(contentid, line, interval, line_name, v_max, v_min, v_unitInter
                 ]
     };
     $('#' + contentid).jqxChart(settings);
-    $('#' + contentid).find("rect").css({ "left": "-1", "top": "-1","border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
+    //$('#' + contentid).find("rect").css({ "left": "-1", "top": "-1","border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
 }
 function setLineDouble(contentid, line1,line2,interval, line_name, v_max, v_min, v_unitInterval, times, v_unitInterval_time, timeX1, timeX2, timeX3, line1Old, timeduan, daypre, daynow) {
     ///<summary>绘制时间段折线图的方法</summary>
@@ -245,9 +245,9 @@ function setLineDouble(contentid, line1,line2,interval, line_name, v_max, v_min,
                 ]
     };
     $('#' + contentid).jqxChart(settings);
-    $('#' + contentid).find("rect").css({ "left": "-1", "top": "-1", "border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
+    //$('#' + contentid).find("rect").css({ "left": "-1", "top": "-1", "border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
 }
 function setLineDoubleDif(contentid, line1, line2, interval, line_name, v_max_l, v_min_l,v_max_r,v_min_r, v_unitInterval, times, v_unitInterval_time, timeX1, timeX2, timeX3, line1Old, timeduan, daypre, daynow) {
     ///<summary>绘制时间段折线图的方法</summary>
@@ -292,7 +292,7 @@ function setLineDoubleDif(contentid, line1, line2, interval, line_name, v_max_l,
     var settings = {
         title: "",
         description: "某两城市 PM 2.5 最近24小时的对比及变化图",
-        enableAnimations: true,
+        enableAnimations: false,
         showLegend: true, //是否显示图例
         showBorderLine: false,
         backgroundColor: 'white',
@@ -353,10 +353,10 @@ function setLineDoubleDif(contentid, line1, line2, interval, line_name, v_max_l,
                 [
                     {
                         type: 'line',
-                        showLabels: true,
-                        lineWidth: 2,
                         valueAxis:
                         {
+							showLabels: true,
+							lineWidth: 2,							
                             showGridLines: false,
                             unitInterval: v_unitInterval,
                             minValue: v_min_l,
@@ -366,14 +366,15 @@ function setLineDoubleDif(contentid, line1, line2, interval, line_name, v_max_l,
                             gridLinesColor: '#999999'//纵轴颜色
                         },
                         series: [
-                                { dataField: 'val1', displayText: '城市A(PM 2.5)', showLabels: false, color: '#FF1493' }                        ]
+                                { dataField: 'val1', displayText: '城市A(PM 2.5)', showLabels: false, color: '#FF1493' }
+								]
                     },
                     {
                         type: 'line',
-                        showLabels: true,
-                        lineWidth: 2,
                         valueAxis:
                         {
+							showLabels: true,
+							lineWidth: 2,
                             showGridLines: false,
                             unitInterval: v_unitInterval,
                             minValue: v_min_r,
@@ -386,13 +387,14 @@ function setLineDoubleDif(contentid, line1, line2, interval, line_name, v_max_l,
                         series: [
                                 { dataField: 'val2', displayText: '城市B(PM 2.5)', showLabels: false, color: '#1ABDE6' }
                         ]
-                    },
+                    }
+					
                 ]
     };
     $('#' + contentid).jqxChart(settings);
-    $('#' + contentid).find("rect").css({ "left": "-1", "top": "-1", "border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
-    $('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
+    //$('#' + contentid).find("rect").css({ "left": "-1", "top": "-1", "border": "0", "width": (parseFloat($('#' + contentid).find("rect").width()) + 10) + "px", "height": (parseFloat($('#' + contentid).find("rect").height()) + 10) + "px" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").parent().css({ "filter": "" });
+    //$('#' + contentid).find("span[class=jqx-chart-axis-description]").css({ "writing-mode": "tb-rl" });
 }
 
 
