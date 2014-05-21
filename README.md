@@ -2,6 +2,7 @@ JqTimeLine
 ==========
 
 A script to draw chart control nearby 24h's data.<br/>
+效果demo:http://flyher.github.io/JqTimeLine/
 ===<br/><br/>
 更新时间:2014-04-28<br/>
 增加:<br/>
@@ -21,5 +22,4 @@ A script to draw chart control nearby 24h's data.<br/>
 <b>1.</b>jqxChart插件中折线图的横坐标与传入的数据没关系，所以可以假定横坐标为0-24共25个点，24个段，每隔4段显示一个坐标，这样就有6段了；<br/>
 <b>2.</b>传入自己的时间段，将时间坐标转换为小数，例如：05:40可以转为 5+40/60 的小数, 利用jqxChart插件，绘制折线图。这步也应该不难。<br/>
 <b>3.</b>成功之后，显示每个点的原始的标注信息，这样，你需要一种方式还原这些坐标时间点。<br/>
-本Demo可以帮你解决这些问题。<br/>
-效果文档:http://flyher.github.io/JqTimeLine/
+
