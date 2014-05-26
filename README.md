@@ -2,7 +2,7 @@ JqTimeLine
 ==========
 
 A script to draw chart control nearby 24h's data.<br/>
-效果demo:http://flyher.github.io/JqTimeLine/
+效果demo:http://flyher.github.io/JqTimeLine/<br/>
 ===<br/><br/>
 更新时间:2014-04-28<br/>
 增加:<br/>
